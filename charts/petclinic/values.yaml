@@ -1,0 +1,13 @@
+#Default vlues for petclinic Helm Chart
+
+#service-loadbalancer.yaml
+service:             
+  port: 80
+  targetPort: 8080
+
+#deployment.yaml
+petclinic:
+  replicaCount: 2
+  image: bohdanhnatiuk/petclinic
+  imageTag: latest
+  containerPort: 8080
